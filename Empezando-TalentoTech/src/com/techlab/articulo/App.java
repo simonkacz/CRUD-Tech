@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
-    private static ArrayList articulos = new ArrayList<>();
-    private static ArrayList categorias = new ArrayList<>();
+    private static ArrayList<Articulo> articulos = new ArrayList<>();
+    private static ArrayList<Categoria> categorias = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
