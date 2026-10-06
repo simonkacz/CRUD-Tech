@@ -1,37 +1,54 @@
-CRUD de Artículos - Java POO
+# CRUD 1 - Herencia, Polimorfismo y ToString
 
-Este proyecto es una aplicación de consola desarrollada en Java que implementa un sistema CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de artículos y categorías.
+**Alumno:** Simon Kaczmarczyk  
+**Comisión:** 26223
 
-Datos del Alumno
+---
 
-Nombre: Simón Kaczmarczyk
+## Descripción del proyecto
 
-Comisión: 26223
+Este proyecto corresponde al **CRUD 1 de artículos**, cuyo objetivo principal es aplicar conceptos fundamentales de **Programación Orientada a Objetos (POO)** utilizando Java.
 
-Características del Sistema
+En esta etapa se trabajan principalmente los siguientes conceptos:
 
-El sistema permite gestionar un catálogo de productos con sus respectivas categorías, diferenciando entre distintos tipos de artículos. Cuenta con un menú interactivo que permite:
+- Clases y objetos
+- Encapsulamiento
+- Herencia
+- Polimorfismo
+- Sobrescritura de métodos
+- Método `toString()`
+- Uso de `instanceof`
+- Composición entre clases
 
-Ingresar un nuevo artículo: Soporta artículos electrónicos (con meses de garantía) y alimenticios (con días para su vencimiento).
+El proyecto consiste en desarrollar un CRUD de artículos utilizando diferentes tipos de artículos que heredan de una clase principal.
 
-Listar artículos: Muestra el catálogo completo con sus detalles específicos.
+---
 
-Consultar: Búsqueda individual de artículos a través de su código único.
+## Objetivo
 
-Modificar: Actualización de precios, nombres y atributos específicos según el tipo de artículo.
+El objetivo del CRUD es comprender cómo se puede mejorar la estructura de un programa mediante el uso de **herencia y polimorfismo**.
 
-Eliminar: Baja de registros del sistema.
+En esta etapa se trabaja con una clase general `Articulo` y diferentes tipos de artículos que heredan de ella:
 
-Conceptos de POO Aplicados
+- `ArticuloElectronico`
+- `ArticuloAlimenticio`
 
-Este proyecto fue diseñado aplicando los pilares fundamentales de la Programación Orientada a Objetos:
+Esto permite reutilizar atributos y comportamientos comunes, al mismo tiempo que cada tipo de artículo puede tener características específicas.
 
-Encapsulamiento: Uso de modificadores de acceso (private) para proteger los datos de las clases y exposición controlada a través de métodos getters y setters.
+---
 
-Composición: Relación "tiene un" establecida entre las clases Articulo y Categoria.
+## Estructura del proyecto
 
-Herencia: Creación de una jerarquía de clases donde ArticuloElectronico y ArticuloAlimenticio extienden de la clase base Articulo para reutilizar código.
+La estructura principal del proyecto es:
 
-Polimorfismo: Sobrescritura de métodos como getTipoArticulo() y getDetalleEspecifico() en las clases hijas para lograr comportamientos específicos, así como el uso de toString() para la representación de los objetos.
-
-Manejo de Colecciones: Uso de genéricos (ArrayList) para el almacenamiento seguro y tipado de los datos en memoria.
+```text
+src/
+└── com/
+    └── techlab/
+        └── articulo/
+            ├── App.java
+            └── model/
+                ├── Articulo.java
+                ├── ArticuloElectronico.java
+                ├── ArticuloAlimenticio.java
+                └── Categoria.java
